@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About aespa</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Ainaa-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+        }    
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        header{
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px 1px;
+            transition: all .5s ease;
+            position: fixed;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .nav_links  {
+            list-style: none;
+        }
+        
+        .nav_links li   {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        /* Center the image horizontally */
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .video {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto; 
+            border-radius: 5px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            padding-left: 40px;
+            justify-content: center;
+        }
+
+        /* Create two unequal columns that float next to each other */
+        /* Left column */
+        .leftcolumn {   
+            float: left;
+            width: 73%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 27%
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #ffcbe7;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, 
+        make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 400px wide, 
+        make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #date {
+            font-size: 15px;
+            color: #3a3131;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="logo_ainaa-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a class="active" href="myinterest.html">My Interest</a>
+                    <ul>
+                        <li><a class="active" href="about aespa.html">About aespa</a></li>
+                        <li><a href="aespa discography.html">Discography</a></li>
+                        <li><a href="achievmentinfluence.html">Achievement and Influence</a></li>
+                    </ul>
+                </li>
+               <li><a href="about me.html">About Me</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 style="margin-top: 100px; text-align: center;">ABOUT AESPA</h1>
+    <p style="text-align: center;" id="date"></p>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toDateString();
+        setInterval(function(){
+            document.getElementById('date').innerHTML = new Date().toDateString();
+        }, 86400000);
+    </script>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">AESPA'S BACKGROUND</h2>
+                    <img src="aespa photos/ot4/20240524_015404.jpg" class="image" alt="aespa photo">
+                    <p style="text-align: justify;">aespa is a South Korean girl group founded by 
+                        SM Entertainment. The group made its debut on November 17, 2020, with the 
+                        digital single "Black Mamba". The group has four members: Karina, Giselle, 
+                        Winter, and NingNing. Each member brings a distinct talent and personality 
+                        to the ensemble, which contributes to their different musical and performing 
+                        styles.Since their debut, aespa has reached notable career milestones. They 
+                        have published numerous popular albums and songs and have amassed a sizable 
+                        international following. Their music videos on YouTube have received millions 
+                        of views, indicating their worldwide appeal.
+                    </p>
+                    <p style="text-align: justify;">
+                        aespa is well-known for their innovative notion of incorporating the metaverse 
+                        and hyperpop music into K-pop. The word "aespa" is an acronym of "ae", which 
+                        stands for 'Avatar X Experience', and "aspect". This represents the group's 
+                        inventive actions with the concept of "experiencing a new world via the encounter 
+                        of the avatar, your other self". This philosophy is reflected in their music and 
+                        shows, which frequently feature virtual reality elements and future themes. Their 
+                        music style, hyperpop, is a combination of many musical genres distinguished by 
+                        an eclectic and avant-garde sound.Therefore, aespa is more than just a K-pop group; 
+                        they are a pioneer in introducing the metaverse concept to the music industry. 
+                        Their original approach to music and performance distinguishes them in the K-pop 
+                        scene, and it will be interesting to see how they affect the industry in the future.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">AESPA PROFILE</h2>
+                    <h5 style="text-align: center;">Profile of each aespa member</h5>
+                    <h3 style="text-align: center;">Karina (카리나)</h3>
+                    <img src="aespa photos/karina/IMG_20240603_053009.jpg" class="image" alt="aespa karina">
+                    <ul style="list-style-type:disc;">
+                        <li>Birth Name: Yu Ji Min (유지민)</li>
+                        <li>English Name: Katarina Yu</li>
+                        <li>Position: Leader, Main Dancer, Lead Rapper, Sub-Vocalist, 
+                            Visual, Face of the Group, Center</li>
+                        <li>Birthday: April 11th, 2000</li>
+                        <li>Zodiac Sign: Aries</li>
+                        <li>Chinese Zodiac Sign: Dragon</li>
+                        <li>MBTI Type: ENFP</li>
+                        <li>Nationality: Korean</li>
+                    </ul>
+                    <p style="text-align: justify;">Karina's extraordinary talent, distinctive 
+                        appearance, and endearing demeanour have captured the attention of me
+                        and fans all around the world. Whether she is dancing or singing, her 
+                        performances are always engaging and high-energy, leaving a lasting 
+                        effect on the audience. Karina stands out thanks to her unique features 
+                        and sense of style, which draws a lot of fans. She still maintains 
+                        her modesty and groundedness in the face of her stardom, showing her 
+                        fans love and respect. Karina has won the respect of numerous 
+                        followers by showcasing excellent leadership abilities in her role 
+                        as aespa's leader.
+                    </p>
+                    <p style="text-align: justify;">Karina's hard work and dedication to her 
+                        trade are also highly admired by her fans. Being a perfectionist, 
+                        she is always trying to get better at everything she does. Her impact 
+                        goes beyond just music. She has had a big influence on the fashion 
+                        industry as a Converse Korea brand ambassador. Karina's fans show 
+                        their appreciation for her in a number of ways, such as by going to 
+                        her shows, joining in fan events, and following her on social media. 
+                        Through texts, letters, and fan art, they also convey their gratitude 
+                        and affection. Karina's path inspires a lot of her admirers, who view 
+                        her as an inspiration. Her uplifting influence inspires followers to 
+                        follow their own hobbies and aspirations. 
+                    </p>
+                    <pre>
+
+                    </pre>
+                    <h3 style="text-align: center;">Giselle (지젤)</h3>
+                    <img src="aespa photos/giselle/IMG_20240603_052958.jpg" class="image" alt="aespa giselle">
+                    <ul style="list-style-type:disc;">
+                        <li>Birth Name: Uchinaga Aeri (うちながえり/우치나가에리)</li>
+                        <li>English Name: Giselle Uchinaga</li>
+                        <li>Korean Name: Cho Aeri (조애리)</li>
+                        <li>Position: Main Rapper, Sub-Vocalist</li>
+                        <li>Birthday: October 30th, 2000</li>
+                        <li>Zodiac Sign: Scorpio</li>
+                        <li>Chinese Zodiac Sign: Dragon</li>
+                        <li>MBTI Type: ENFP</li>
+                        <li>Nationality: Japanese-Korean</li>
+                    </ul>
+                    <p style="text-align: justify;">There are several reasons why aespa's 
+                        Giselle draws in me. To begin with, her ability and 
+                        accomplishments in the music business have won her a great deal of 
+                        international attention. On October 30, 2020, she was formally 
+                        unveiled as the fourth and last member of aespa, cemented her status
+                        as a public figure. Apart from that, Giselle's sense of style is 
+                        something else that I appreciate. She has had a big impact 
+                        on the fashion industry as the global ambassador for Givenchy and 
+                        the spokeswoman for Dolce & Gabbana, together with her group mates. 
+                        I was enthralled with her compelling presence during her recent 
+                        photo shoot for W Korea, when she adopted a stunning dark winter vibe.
+                    </p>
+                    <p style="text-align: justify;">Second, a big part of Giselle's allure 
+                        is her eye-catching appearance. Her appearance in her most recent 
+                        magazine photo shoot is well-liked by her followers, who frequently 
+                        show their appreciation for her on social media—especially Instagram. 
+                        In addition, Giselle is adored by fans all around the world due 
+                        to her endearing nature. Her confident demeanour and captivating flair 
+                        captivate her admirers. Finally, I have remarked that Giselle 
+                        has a distinct aura, particularly in her pictures. Her distinct style 
+                        was evident as her black, red, and tan ensembles produced a smooth 
+                        transition between shots. In overall, Giselle's fans are drawn to 
+                        her skill, sense of style, attractive appearance, alluring demeanour, 
+                        and distinct aura. Her popularity can be seen in the favourable 
+                        responses and admiration she continually receives from fans for her 
+                        imaginative campaigns and eye-catching images.
+                    </p>
+                    <pre>
+
+                    </pre>
+                    <h3 style="text-align: center;">Winter (윈터)</h3>
+                    <img src="aespa photos/winter/IMG_20240603_052928.jpg" class="image" alt="aespa winter">
+                    <ul style="list-style-type:disc;">
+                        <li>Birth Name: Kim Minjeong (김민정)</li>
+                        <li>Position: Lead Dancer, Lead Vocalist, Visual</li>
+                        <li>Birthday: January 1st, 2001</li>
+                        <li>Zodiac Sign: Capricorn</li>
+                        <li>Chinese Zodiac Sign: Dragon</li>
+                        <li>Nationality: Korean</li>
+                    </ul>
+                    <p style="text-align: justify;">I admire Winter for many reasons. Her talent is 
+                        one of the key draws, as her dancing and vocal abilities captivate spectators 
+                        throughout performances. Winter's personality is another quality that I adore. 
+                        She is known for her lively and pleasant demeanour, and she frequently smiles, 
+                        which I find endearing. Her spectacular visuals, which have prompted analogies 
+                        to Snow White, add to her appeal. A photocard of Winter looking cute in small 
+                        twin braids and a joyful face went popular among worldwide followers.
+                    </p>
+                    <p style="text-align: justify;">Winter's four years of training before to her debut 
+                        show how committed she was to her job. I was moved by her dedication and 
+                        relatability. I can learn about Winter's preferences for action and war films, 
+                        as well as her love of chocolate and other sweets, from her likes and dislikes. 
+                        Her distinct features, like the dimple on her left cheek and her distinct 
+                        culinary preferences, contribute to her allure. Finally, Winter's influence 
+                        links her to fans of other well-known K-pop groups, especially her love for EXO's 
+                        Baekhyun. In the K-pop industry, Winter is adored due to the combination of all 
+                        these factors.
+                    </p>
+                    <pre>
+
+                    </pre>
+                    <h3 style="text-align: center;">Ningning (닝닝)</h3>
+                    <img src="aespa photos/ningning/IMG_20240603_052914.jpg" class="image" alt="aespa ningning">
+                    <ul style="list-style-type:disc;">
+                        <li>Birth Name: Ning Yizhuo (宁艺卓)</li>
+                        <li>Position: Main Vocalist, Maknae</li>
+                        <li>Birthday: October 23rd, 2002</li>
+                        <li>Zodiac Sign: Scorpio</li>
+                        <li>Chinese Zodiac Sign: Horse</li>
+                        <li>Nationality: Chinese</li>
+                    </ul>
+                    <p style="text-align: justify;">Ningning has a large following that admires her for a 
+                        variety of reasons. One of the key draws is her transnational appeal as a Chinese 
+                        vocalist based in South Korea, which adds a unique viewpoint to the ensemble. Her 
+                        talent, notably her powerful singing, is another distinguishing feature that fans 
+                        and I admire. Ningning's fashion sense has also received appreciation from fans 
+                        and netizens alike. For example, her Y2K look during a performance at the Kangnam 
+                        University Festival received significant praise for its retro feel.
+                    </p>
+                    <p style="text-align: justify;">Furthermore, people frequently praise Ningning's 
+                        appearance; some have even drawn comparisons between her and well-known South 
+                        Korean singer and actress Lee Hyori from 20 years ago. Fans like Ningning not 
+                        only for her skill and beauty but also for her relatable and humble nature. 
+                        Her accomplishments, like being named a Versace Global Ambassador, have also 
+                        won her the respect of her followers. To sum up, Ningning's accomplishments, 
+                        style, talent, and appearance all contribute to her attraction. She is a 
+                        well-liked character in the K-pop world because of her remarkable performances 
+                        and capacity to establish personal connections with fans. Fans are excited to 
+                        see what intriguing projects she will work on for the company and how her 
+                        artistic development will continue.
+                    </p>
+                </div>
+            </div>
+        </div>
+   
+        <div class="rightcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2>New Comeback</h2>
+                    <iframe src="https://www.youtube.com/embed/nFYwcndNuOY?si=A0Rdfc4bP0k5f9w7" class="video" 
+                        alt="Armageddon by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p style="text-align: justify;"><b>Interstellar Journey with aespa: K-pop Sensation Announces Cosmic Comeback with 
+                        First Full Album 'Armageddon'</b>
+                    </p>
+                    <p style="text-align: justify;">Mark your calendars for <b>May 27</b> as K-pop sensation <b>aespa</b> announces 
+                        their stellar comeback with the release of their first full album <b>'Armageddon</b>'.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>aespa's Music Video</h3>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/phuiiNCxRMg?si=6EFKOZXGEvfNQlXe" class="video" 
+                        alt="Supernova by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/gfk3QLU1x0E?si=acbN2khLw3T8qzRU" class="video" 
+                        alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/4TWR90KJl84?si=wejhwJWeC3OMF1Cg" class="video"
+                       alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>SM Culture Universe</h3>
+                    <p style="text-align: justify;">Enter a world where creativity and music collide, and the digital and real worlds merge. 
+                        Explore the adventures of aespa in the SM Culture Universe (SMCU), where they defend their digital selves by facing 
+                        off against the evil Black Mamba. Take in a singular fusion of engrossing images, gripping narratives, and, of course, 
+                        aespa's engaging soundtrack. Get lost in the SMCU; don't just listen. Take a trip with aespa in KWANGYA right now!"
+                    </p>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/PtFnieJ7Imc?si=B7bWnc67Zp-V-Uz8" class="video"
+                        alt="SMCU the Origin" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>SMCU the Origin</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/vbH4Lk5wYWg?si=Ae970dGm2b5K0v3Y" class="video"
+                        alt="aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/i8fRCkq5tbw?si=GtAVlMs83vOFuO2U" class="video"
+                        alt="aespa 에스파 'ep.2 Next Level' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.2 Next Level' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/iq-ivLY_9A8?si=cejeU1vRVgiQFIRV" class="video"
+                        alt="aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Copyright © 2024, Nur Ainaa Syazwani</p>
+    </div>
+
+</body>
+</html>

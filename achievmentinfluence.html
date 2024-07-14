@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Achievement an Influence</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Ainaa-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+        }    
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        header{
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px 1px;
+            transition: all .5s ease;
+            position: fixed;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .nav_links  {
+            list-style: none;
+        }
+        
+        .nav_links li   {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        /* Center the image horizontally */
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .video {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto; 
+            border-radius: 5px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            padding-left: 40px;
+            justify-content: center;
+        }
+
+        /* Create two unequal columns that float next to each other */
+        /* Left column */
+        .leftcolumn {   
+            float: left;
+            width: 73%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 27%
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffa9db;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ff93d2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #ffcbe7;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, 
+        make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 400px wide, 
+        make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #date {
+            font-size: 15px;
+            color: #3a3131;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="logo_ainaa-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a class="active" href="myinterest.html">My Interest</a>
+                    <ul>
+                        <li><a href="about aespa.html">About aespa</a></li>
+                        <li><a href="aespa discography.html">Discography</a></li>
+                        <li><a class="active" href="achievmentinfluence.html">Achievement and Influence</a></li>
+                    </ul>
+                </li>
+               <li><a href="about me.html">About Me</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 style="margin-top: 100px; text-align: center;">AESPA'S ACHIEVEMENT AND INFLUENCE</h1>
+    <p style="text-align: center;" id="date"></p>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toDateString();
+        setInterval(function(){
+            document.getElementById('date').innerHTML = new Date().toDateString();
+        }, 86400000);
+    </script>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">RECEIVED AND NOMINATED AWARDS</h2>
+                    <p id="date"></p>
+                    <script>
+                        document.getElementById('date').innerHTML = new Date().toDateString();
+                        setInterval(function(){
+                            document.getElementById('date').innerHTML = new Date().toDateString();
+                        }, 86400000);
+                    </script>
+                    <img src="aespa photos/ot4/IMG_20240603_051928.jpg" class="image" alt="aespa photo">
+                    <p style="text-align: justify;">Some of the notable achievements of aespa:</p>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Award</th>
+                            <th>Category</th>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Hanteo Music Awards</td>
+                            <td>Female Group Artist Award</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Asian Pop Music Awards</td>
+                            <td>Best New Artist (Overseas)</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Mubeat Awards</td>
+                            <td>Rookie Female Artist</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Asia Artist Awards</td>
+                            <td>Hot Trend Award<br>
+                                Rookie of the Year (Music)<br>
+                                Stage of the Year (Daesang)</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Melon Music Awards (MMA)</td>
+                            <td>Best Female Group<br>
+                                New Female Artist of the Year<br>
+                                Record of the Year (Daesang)<br>
+                                Top 10 Artist</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>MAMA Awards (MAMA)</td>
+                            <td>Best Female Group Dance Performance - <i>"Next Level"</i><br>
+                                Best New Female Artist</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Asian Pop Music Awards</td>
+                            <td>People's Choice Overseas Award (10th Place)<br>
+                                Top 20 Overseas Albums of the Year - <i>"Savage"</i><br>
+                                Top 20 Overseas Songs of the Year - <i>"Savage"</i></td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Golden Disc Awards</td>
+                            <td>Artist of the Year<br>
+                                Best Digital Song (Bonsang) - <i>"Savage"</i><br>
+                                Cosmopolitan Artist Award<br>
+                                Rookie Artist of the Year</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Circle Chart Music Awards</td>
+                            <td>World Rookie of the Year</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Korean Music Awards</td>
+                            <td>Best K-POP Song - <i>"Next Level"</i><br>
+                                Rookie of the Year<br>
+                                Song of the Year - <i>"Next Level"</i><br></td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Hanteo Music Awards</td>
+                            <td>Artist of the Year (Bonsang)</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Seoul Music Awards</td>
+                            <td>Main Award (Bonsang)</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Melon Music Awards</td>
+                            <td>Best Female Performance<br>
+                                Million Top 10 Artists - <i>"My World"</i><br>
+                                Top 10 Artists<br>
+                                Global Artist</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Seoul Music Awards</td>
+                            <td>Main Award (Bonsang)</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>The Fact Music Awards</td>
+                            <td>Artist of the Year (Bonsang)<br>
+                                Worldwide Icon</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Circle Chart Music Awards</td>
+                            <td>Artist of the Year (Global Digital Music) (July) - <i>"Girls"</i></td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Circle Chart Music Awards</td>
+                            <td>Artist of the Year (Streaming Unique Listeners) - <i>"Spicy"</i></td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Golden Disc Awards</td>
+                            <td>Best Album (Bonsang) - <i>"My World"</i></td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Seoul Music Awards</td>
+                            <td>Main Award (Bonsang)</td>
+                            <td>Won</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">BRAND ENDORSEMENTS</h2>
+                    <img src="aespa photos/ot4/20240603_050618.jpg" class="image" alt="aespa photo">
+                    <p style="text-align: justify;">Some of the notable brand partnerships and endorsements of aespa:</p>
+                    <ol>
+                        <li>Givenchy: aespa serves as the brand's muse for high-end clothing. Since 2020, they have 
+                            posed for pictures and posted pictures on Instagram to showcase their clothes. The fact 
+                            that aespa is Givenchy's first-ever South Korean ambassador adds even more significance 
+                            to this endorsement.
+                        </li>
+                        <li>Eider: Eider was the recipient of aespa's most recent endorsement. They are a French 
+                            company that produces athletic clothing for ice climbing and mountaineering.
+                        </li>
+                        <li>Chopard: aespa is also the new face of Chopard, a Swiss company that makes high-end 
+                            timepieces, jewellery, and accessories.
+                        </li>
+                        <li>Karina has been named the new brand ambassador for Converse Korean. She was formally 
+                            revealed as the brand's ambassador during the Converse 2024 Spring Campaign.
+                        </li>
+                        <li>Giselle has been named the new brand ambassador for LOEWE, a luxury fashion brand. 
+                            She was formally introduced as the brand's ambassador at the LOEWE 2024 Fall-Winter 
+                            Pre-Collection Show in Paris.
+                        </li>
+                        <li>Winter has been announced as Polo Ralph Lauren's new brand ambassador. She was formally 
+                            introduced as the brand's ambassador during the Polo Ralph Lauren Fall and Holiday collections of 2023.
+                        </li>
+                        <li>Ningning has been named the new brand ambassador for Versace, a luxury fashion company. 
+                            She was formally presented as the brand ambassador at the Versace 2024 Fall-Winter Pre-Collection Show in Paris.
+                        </li>
+                    </ol>
+                    <p style="text-align: justify;">It is understandable to me as a fan why companies want to work with aespa. 
+                        aespa is a worldwide sensation rather than merely a K-pop group. Audiences all across the world have 
+                        been enthralled by their extraordinary ability, remarkable concept, and striking visuals. A wide range 
+                        of fans can relate to each member's unique personality and sense of style. Their performances are 
+                        consistently exciting and captivating, and their music cuts over linguistic boundaries. aespa's reach 
+                        and impact are acknowledged by brands, which makes them perfect brand ambassadors. Their youthful and 
+                        lively spirit is a fantastic match for more casual and sporty businesses, but their fashion-forward 
+                        image fits in perfectly with premium brands. aespa is a very approachable and important figure because 
+                        of their dedication to their profession and their relationship with fans. For me as a fan, aespa's 
+                        partnerships with these companies are a testament to their success and diligence. It is thrilling to 
+                        watch them become well-known and keep pushing boundaries in the fashion and music industries. aespa's 
+                        global influence and the strong message they deliver through their distinct styles and music are 
+                        demonstrated by their brand partnerships. 
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">AESPA INFLUENCE ON ME</h2>
+                    <img src="aespa armageddon/armageddon teaser/GOMPEZYbAAArTt1.jpeg" class="image" alt="aespa photo">
+                    <p style="text-align: justify;">aespa's music and their unique concept have had a profound influence on my 
+                        perspective on music. Their innovative approach to integrating the metaverse and hyperpop music into 
+                        K-pop has opened my eyes to the limitless possibilities of music and technology.
+                    </p>
+                    <p>aespa's music is not just about catchy tunes and impressive choreography. It's about creating a whole 
+                        new world, an alternate reality where music, art, and technology intersect. This has made me realize 
+                        that music is not just an auditory experience, but a multi-dimensional one that can transport you to 
+                        different worlds.
+                    </p>
+                    <p>Their songs, with their futuristic sound and thought-provoking lyrics, have challenged me to think 
+                        deeper about the messages behind the music. Songs like "Black Mamba" and "Next Level" explore themes of 
+                        identity, self-discovery, and the duality of our online and offline selves. This has made me more aware 
+                        of the impact of technology on our lives and how it shapes our identities.
+                    </p>
+                    <p>Furthermore, aespa's concept of having virtual avatars as part of the group has influenced my understanding 
+                        of what a K-pop group can be. It's not just about the physical members, but also their virtual counterparts. 
+                        This has broadened my perspective on the potential of virtual reality in music and performance.
+                    </p>
+                    <p>In conclusion, aespa's music and concept have not only entertained me but also inspired me to think outside 
+                        the box. They have shown me that music can be a platform for innovation and exploration, pushing boundaries 
+                        and challenging norms. This has enriched my appreciation for music and sparked my curiosity for what the 
+                        future of music holds.
+                    </p>
+                </div>
+            </div>
+        </div>
+   
+        <div class="rightcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2>New Comeback</h2>
+                    <iframe src="https://www.youtube.com/embed/nFYwcndNuOY?si=A0Rdfc4bP0k5f9w7" class="video" 
+                        alt="Armageddon by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p style="text-align: justify;"><b>Interstellar Journey with aespa: K-pop Sensation Announces Cosmic Comeback with 
+                        First Full Album 'Armageddon'</b>
+                    </p>
+                    <p style="text-align: justify;">Mark your calendars for <b>May 27</b> as K-pop sensation <b>aespa</b> announces 
+                        their stellar comeback with the release of their first full album <b>'Armageddon</b>'.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>aespa's Music Video</h3>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/phuiiNCxRMg?si=6EFKOZXGEvfNQlXe" class="video" 
+                        alt="Supernova by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/gfk3QLU1x0E?si=acbN2khLw3T8qzRU" class="video" 
+                        alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/4TWR90KJl84?si=wejhwJWeC3OMF1Cg" class="video"
+                       alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>SM Culture Universe</h3>
+                    <p style="text-align: justify;">Enter a world where creativity and music collide, and the digital and real worlds merge. 
+                        Explore the adventures of aespa in the SM Culture Universe (SMCU), where they defend their digital selves by facing 
+                        off against the evil Black Mamba. Take in a singular fusion of engrossing images, gripping narratives, and, of course, 
+                        aespa's engaging soundtrack. Get lost in the SMCU; don't just listen. Take a trip with aespa in KWANGYA right now!"
+                    </p>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/PtFnieJ7Imc?si=B7bWnc67Zp-V-Uz8" class="video"
+                        alt="SMCU the Origin" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>SMCU the Origin</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/vbH4Lk5wYWg?si=Ae970dGm2b5K0v3Y" class="video"
+                        alt="aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/i8fRCkq5tbw?si=GtAVlMs83vOFuO2U" class="video"
+                        alt="aespa 에스파 'ep.2 Next Level' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.2 Next Level' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/iq-ivLY_9A8?si=cejeU1vRVgiQFIRV" class="video"
+                        alt="aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Copyright © 2024, Nur Ainaa Syazwani</p>
+    </div>
+
+</body>
+</html>

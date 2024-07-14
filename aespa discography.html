@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Discography</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Ainaa-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+        }    
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        header{
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px 1px;
+            transition: all .5s ease;
+            position: fixed;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .nav_links  {
+            list-style: none;
+        }
+        
+        .nav_links li   {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        /* Center the image horizontally */
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .video {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto; 
+            border-radius: 5px;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            padding-left: 40px;
+            justify-content: center;
+        }
+
+        /* Create two unequal columns that float next to each other */
+        /* Left column */
+        .leftcolumn {   
+            float: left;
+            width: 73%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 27%
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #ffcbe7;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, 
+        make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        /* Responsive layout - when the screen is less than 400px wide, 
+        make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #date {
+            font-size: 15px;
+            color: #3a3131;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="logo_ainaa-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a class="active" href="myinterest.html">My Interest</a>
+                    <ul>
+                        <li><a href="about aespa.html">About aespa</a></li>
+                        <li><a class="active" href="aespa discography.html">Discography</a></li>
+                        <li><a href="achievmentinfluence.html">Achievement and Influence</a></li>
+                    </ul>
+                </li>
+               <li><a href="about me.html">About Me</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 style="margin-top: 100px; text-align: center;">AESPA DISCOGRAPHY</h1>
+    <p style="text-align: center;" id="date"></p>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toDateString();
+        setInterval(function(){
+            document.getElementById('date').innerHTML = new Date().toDateString();
+        }, 86400000);
+    </script>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">FAVOURITE SONGS</h2>
+                    <h4 style="text-align: center;">List of my favourite aespa songs.</h4>
+                    <p id="date"></p>
+                    <script>
+                        document.getElementById('date').innerHTML = new Date().toDateString();
+                        setInterval(function(){
+                            document.getElementById('date').innerHTML = new Date().toDateString();
+                        }, 86400000);
+                    </script>
+                    <div>
+                        <h4>1. Lucid Dream</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5DhAts7WcPk?si=fXj9foCqiVIAGreK" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe> 
+                        <p style="text-align:justify;">"Lucid Dream" by aespa is a song about being lost in a dream-like state 
+                            and always yearning for something or someone. The lyrics depict a sense of confusion and longing, 
+                            as the members of aespa express their sentiments of isolation and uncertainty. This song speaks to 
+                            me because it passionately conveys the sense of desire and the complexities of emotions. The dreamy 
+                            and ethereal quality of the music, mixed with the powerful vocals of the aespa members, makes for a 
+                            mesmerising and immersive listening experience.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4>2. Thirsty</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/i0RCcSBPjuU?si=pw_E7UT6RdVMx8gV" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe> 
+                        <p style="text-align:justify;">aespa's "Thirsty" explores the theme of yearning and desire for someone. 
+                            The lyrics explain the members of aespa's desire for a person, as reflected by their thirst. They use 
+                            ocean and wave metaphors to convey their fascination and curiosity for this individual. Winter opens 
+                            the song by expressing her desire to reach out to this person, recognising the beauty and mystery in 
+                            their gaze. She likens herself to a violent wind that upsets their feelings. Winter knows that this 
+                            person radiates throughout the day, heightening their appeal.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4>3. I'm Unhappy</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CC7OrEx5H4U?si=3gQJ_YIx-iOBNg0p" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe> 
+                        <p style="text-align:justify;">"I'm Unhappy" by aespa delves at the feelings of dissatisfaction and sadness 
+                            that can occur from comparing oneself to others on social media. The lyrics depict the narrator's sense 
+                            of monotony and boredom, with the line "My timeline has come to a stop, day and night drag on" implying 
+                            a lack of thrill or fulfilment. The song discusses the hardships and dissatisfaction that many of us 
+                            encounter on a daily basis, as well as how we may overcome them. It is a reminder to be loyal to oneself 
+                            and not darken one's light for others.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4>4. Welcome To My World</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_plU9O_4Pn8?si=vow8LSYmsFTL0h2h" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
+                        <p style="text-align:justify;">"Welcome to My World" by aespa is a song about unification, crossing boundaries, 
+                            and accepting differences. The lyrics describe a fascinating and enticing universe into which the artists 
+                            invite the listener. This song speaks to me because it eloquently conveys the sense of desire and the 
+                            complexities of emotions. The dreamy and ethereal quality of the music, mixed with the powerful vocals of 
+                            the aespa members, makes for a mesmerising and immersive listening experience.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4>5. Spicy</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GZ2xRS8y5tw?si=1jdasClShu42EPCP" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe> 
+                        <p style="text-align:justify;">"Spicy" by aespa embodies the essence of empowerment and self-assurance, 
+                            setting boundaries and refusing to take anything less than what one deserves. The lyrics portray aespa 
+                            members as strong, confident, and unapologetic people. They exude a sense of empowerment and control, 
+                            refusing to allow others determine their worth or manipulate their emotions. The repeated reference to 
+                            being "too spicy" indicates their extroverted and assertive demeanour, which can be daunting for others 
+                            who are not prepared to deal with it. Through catchy choruses and strong verses, "Spicy" becomes an anthem 
+                            for embracing one's identity, defining boundaries, and standing up for oneself in the face of insecurity or doubt.
+                        </p>
+                    </div>
+                    <pre>
+                        
+                    </pre>
+                    <div>
+                        <h4>6. Drama</h4>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7dOPvVV1Ui4?si=ZPiizNZzkZUD3xUr" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
+                        <p style="text-align:justify;">aespa's "Drama" delves into themes of empowerment, self-expression, and 
+                            breaking free from societal expectations and limits. The lyrics show confidence and resolve as the 
+                            members of aespa proclaim their individuality and embrace their distinct personalities. The initial 
+                            sentence, "I'm the drama," implies that aespa is ready to take centre stage and leave their mark. 
+                            This song empowers and inspires me. It encourages listeners to accept their own "drama" and conquer 
+                            any difficulties or traumas in their lives to live genuinely and freely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h2 style="text-align: center;">AESPA ALBUM REVIEW</h2>
+                    <div>
+                        <h4 style="text-align: center;">aespa "Armageddon" 1st Full Album Review</h4>
+                        <img src="aespa photos/ot4/d01c10879ea9cb369d822d3c37c7fe13.jpg" class="image" alt="armageddon">
+                        <p style="text-align: justify;">"Armageddon" was eagerly anticipated, given the length of time it 
+                            took to arrive and the typically high quality that aespa has gave us. aespa shines most when 
+                            they embrace their most edgy, striking sounds. Tracks like "Supernova" combine high fashion 
+                            and a grungy mood, with revving sound effects and poised synths. The title track, "Armageddon," 
+                            maintains its low-slung, high-attitude style while smoothly moving between softer periods. 
+                            Furthermore, "Set The Tone" sounds like the ideal beginning music for a massive brawl, with lines 
+                            like "We set the tone / Music on where we go / Crazy beat drum." The album is a story of progress 
+                            and empowerment. In "Mine," aespa focuses on overcoming fear and insecurity to eventually stand strong. 
+                            "Prologue" encourages listeners to follow their own path rather than comparing themselves to others—an 
+                            important lesson in today's social media-driven world. Similarly, "Live My Life" emphasises doing 
+                            things their own way, with each member serving as the main character in their own life. While some 
+                            tracks are experimental, others venture into more mainstream terrain. "Bahama" is a breezy, bright 
+                            summer pop song about bringing a buddy on a trip to the named island. The catchy chorus—"Take me, 
+                            take me / Take me on a / Ocean blue / Bahama, ba ba / Bahama, hama"—makes it an immediate hit for 
+                            any summer playlist. Overall, "Armageddon" meets expectations, demonstrating aespa's development, 
+                            confidence, and versatility. As a fan, I am excited to see how they evolve and explore with their sound!
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4 style="text-align: center;">aespa "Drama" 4th Mini Album Review</h4>
+                        <img src="aespa photos/ot4/45f0fab3977d613a78df1373265cb074.jpg" class="image" alt="drama">
+                        <p style="text-align: justify;">On November 10, 2023, aespa released their fourth mini album, 'Drama'. 
+                            "Drama" has a captivating, electric energy. It is not like the previous title tracks by Aespa. 
+                            Even though it still adheres to the classic slogan of female emancipation, its presentation is 
+                            more engaging. The record quickly shifts gears to "Trick or Trick," a punch line. A Halloween-themed 
+                            song with fun lyrics and a powerful bassline. Tackling the hyperpop genre, "Trick or Trick" is a 
+                            fun song to listen to. "You," a romantic, soft song with a shimmering vocal performance and a laid-back 
+                            guitar lead, serves as the album's finale. Giselle, Winter, Ningning, and Karina all feel regal as 
+                            they sing in appreciation to their fans. 'Drama - The Fourth Mini Album' is a wonderful addition to the aespa 
+                            universe. It showcases the four girls' vocal prowess and musical versatility. Although the plot 
+                            became little convoluted, the overall energy, particularly from the title track 'Drama', was 
+                            uplifting and left the listener wanting more.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4 style="text-align: center;">aespa "MY WORLD" 3rd Mini Album Review</h4>
+                        <img src="aespa photos/ot4/476db818399afd33fa05383ca749e4c1.jpg" class="image" alt="my world">
+                        <p style="text-align: justify;">"MY WORLD" is aespa's third mini-album, released in 2023. 
+                            This album marks a significant step in aespa's musical journey, showcasing their ability to deliver 
+                            big songs with infectious hooks. The album includes six songs, each trying to outdo the others, 
+                            demonstrating aespa's versatility. Standout tracks like "Salty & Sweet" and "Thirsty" show aespa's 
+                            unique approach to music, blending industrial synth grinds with unconventional instrumental approaches. 
+                            "I'm Unhappy" captures feelings of melancholy and longing, using the digital world as a metaphor for 
+                            feeling disconnected. Overall, "MY WORLD" is a testament to aespa's growth as artists and their bid 
+                            for main pop girl status.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4 style="text-align: center;">aespa "Girls" 2nd Mini Album Review</h4>
+                        <img src="aespa photos/ot4/19ea63385496643d87bbd102f2700272.jpg" class="image" alt="girls">
+                        <p style="text-align: justify;">"Girls" is aespa's second mini-album, released in 2022. 
+                            This album includes their debut song "Black Mamba", their remake of Yoo Young-jin's R&B ballad 
+                            "Forever", and their cover of S.E.S.'s "Dreams Come True". However, the album has been criticized 
+                            for playing it too safe, lacking the intense grip on your attention as "Next Level" did. Despite this, 
+                            the album shows off fresh approaches in aespa's music. "Lingo" mixes flashes of country into 
+                            their futuristic pop, while "Life's Too Short" and "ICU" are pretty but safe guitar-led pop tracks.
+                        </p>
+                    </div>
+                    <pre>
+                    </pre>
+                    <div>
+                        <h4 style="text-align: center;">aespa "Savage" 1st Mini Album Review</h4>
+                        <img src="aespa photos/ot4/717fae86d1c566f3b7681ecb11c5017a.jpg" class="image" alt="savage">
+                        <p style="text-align: justify;">"Savage" is aespa's first mini-album, released in 2021. 
+                            This album sees the quartet dive head-first into electrifying hyperpop and cutting-edge production. 
+                            It's a bold and innovative album that stakes aespa's claim for greatness with its future-facing cyberpunk theme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="rightcolumn">
+            <div class="container">
+                <div class="card">
+                    <h2>New Comeback</h2>
+                    <iframe src="https://www.youtube.com/embed/nFYwcndNuOY?si=A0Rdfc4bP0k5f9w7" class="video" 
+                        alt="Armageddon by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p style="text-align: justify;"><b>Interstellar Journey with aespa: K-pop Sensation Announces Cosmic Comeback with 
+                        First Full Album 'Armageddon'</b>
+                    </p>
+                    <p style="text-align: justify;">Mark your calendars for <b>May 27</b> as K-pop sensation <b>aespa</b> announces 
+                        their stellar comeback with the release of their first full album <b>'Armageddon</b>'.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>aespa's Music Video</h3>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/phuiiNCxRMg?si=6EFKOZXGEvfNQlXe" class="video" 
+                        alt="Supernova by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/gfk3QLU1x0E?si=acbN2khLw3T8qzRU" class="video" 
+                        alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/4TWR90KJl84?si=wejhwJWeC3OMF1Cg" class="video"
+                       alt="Better Things by aespa Music Video" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3>SM Culture Universe</h3>
+                    <p style="text-align: justify;">Enter a world where creativity and music collide, and the digital and real worlds merge. 
+                        Explore the adventures of aespa in the SM Culture Universe (SMCU), where they defend their digital selves by facing 
+                        off against the evil Black Mamba. Take in a singular fusion of engrossing images, gripping narratives, and, of course, 
+                        aespa's engaging soundtrack. Get lost in the SMCU; don't just listen. Take a trip with aespa in KWANGYA right now!"
+                    </p>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/PtFnieJ7Imc?si=B7bWnc67Zp-V-Uz8" class="video"
+                        alt="SMCU the Origin" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>SMCU the Origin</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/vbH4Lk5wYWg?si=Ae970dGm2b5K0v3Y" class="video"
+                        alt="aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.1 Black Mamba' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/i8fRCkq5tbw?si=GtAVlMs83vOFuO2U" class="video"
+                        alt="aespa 에스파 'ep.2 Next Level' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.2 Next Level' - SM Culture Universe</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/iq-ivLY_9A8?si=cejeU1vRVgiQFIRV" class="video"
+                        alt="aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <p>aespa 에스파 'ep.3 Girls (Don't you know I'm a Savage?)' - SM Culture Universe</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Copyright © 2024, Nur Ainaa Syazwani</p>
+    </div>
+
+</body>
+</html>

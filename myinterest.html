@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Interest</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Ainaa-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+        }    
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        header{
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px 1px;
+            transition: all .5s ease;
+            position: fixed;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .nav_links  {
+            list-style: none;
+        }
+        
+        .nav_links li   {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+        
+        .content {
+            padding: 16px;
+        }
+
+        /* Center the image horizontally */
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: #ffcbe7;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #date {
+            font-size: 15px;
+            color: #3a3131;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="logo_ainaa-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a class="active" href="myinterest.html">My Interest</a>
+                    <ul>
+                        <li><a href="about aespa.html">About aespa</a></li>
+                        <li><a href="aespa discography.html">Discography</a></li>
+                        <li><a href="achievmentinfluence.html">Achievement and Influence</a></li>
+                    </ul>
+                </li>
+               <li><a href="about me.html">About Me</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="margin-top: 100px; text-align: center;">MY INTEREST</h1>
+    <p style="text-align: center;" id="date"></p>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toDateString();
+        setInterval(function(){
+            document.getElementById('date').innerHTML = new Date().toDateString();
+        }, 86400000);
+    </script>
+    <div class="container">
+        <div class="card">
+            <img src="aespa armageddon/superbeing teaser/GNa7r0jb0AAqfG3.jpeg" class="image" alt="aespa photo">
+            <p style="text-align: justify;">Hello and welcome to my little internet nook. My name is Ainaa, 
+                and I am extremely fond of K-pop, particularly the phenomenal group aespa.
+                My experience with aespa began on their rookie day. I can still recall the excitement and eagerness I had 
+                as I awaited their debut. I was enthralled from the time they stepped into the spotlight. Their original 
+                approach, spectacular performances, and captivating music spoke to me. I was captivated to their inventive 
+                approach to music and the way they flawlessly mixed several genres to create a sound that was uniquely theirs.
+            </p>
+            <p style="text-align: justify;">Over time, my admiration for aespa grew. I found myself anticipating their new releases, watching their music 
+                videos on repeat, and even studying their choreography. Their songs became the soundtrack to my life, 
+                following me on highs and lows while always bringing a smile to my face.  But my fascination with aespa goes 
+                beyond their music. I admire them as individuals for their dedication, enthusiasm for their work, and loyalty 
+                to their fans. They motivate me to follow my own passions with equal zeal and determination.
+                This website is a reflection of my journey as an aespa enthusiast. Here, I discuss their music, provide updates 
+                on their activities, and share my experiences as a member of the ever-growing fandom. Whether you are a fan or 
+                just inquisitive about K-pop, I hope you find something interesting here.
+                Join me as I continue my adventure with aespa, discovering the world of K-pop and experiencing the joy that 
+                music brings into our lives. 
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Copyright © 2024, Nur Ainaa Syazwani</p>
+    </div>
+
+</body>
+</html>

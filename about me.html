@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="favicon/Ainaa-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+        }    
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        header{
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px 1px;
+            transition: all .5s ease;
+            position: fixed;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .nav_links  {
+            list-style: none;
+        }
+        
+        .nav_links li   {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+
+        .intro {
+            padding: 20px;
+        }
+
+        .intro-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .intro-logo {
+            height: 50px; /* Adjust height as needed */
+            margin-right: 120px; /* Adjust margin as needed */
+
+        }
+
+        .card {
+            background-color: #ffcbe7;
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: normal;
+            font-weight: bold;
+        }
+
+        h2 span {
+            color: #ff80c6;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .content {
+            max-width: 700px;
+        }
+
+        .picture {
+            width: 95%;
+            height: auto;
+            padding-left: 30px;
+            padding-right: 5px;
+        }
+
+        /* Social Media */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 20px; /* Adjust spacing between social media icons */
+        }
+
+        .social-links a img {
+            width: 50px; /* Adjust the size of the social media icons */
+        }
+
+        #date {
+            font-size: 15px;
+            color: #3a3131;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="logo_ainaa-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="myinterest.html">My Interest</a>
+                    <ul>
+                        <li><a href="about aespa.html">About aespa</a></li>
+                        <li><a href="aespa discography.html">Discography</a></li>
+                        <li><a href="achievmentinfluence.html">Achievement and Influence</a></li>
+                    </ul>
+                </li>
+               <li><a class="active" href="about me.html">About Me</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="margin-top: 100px; text-align: center;">ABOUT ME</h1>
+    <p style="text-align: center;" id="date"></p>
+    <script>
+        document.getElementById('date').innerHTML = new Date().toDateString();
+        setInterval(function(){
+            document.getElementById('date').innerHTML = new Date().toDateString();
+        }, 86400000);
+    </script>
+
+    <main>
+        <div class="card">
+            <div class="container">
+                <div class="content">
+                    <div class="intro-container">
+                        <div>
+                            <h2>Hi, I'm <span class="highlight">Ainaa Syazwani </span></h2>
+                            <h2> a Library Management Student.</h2> 
+                        </div>
+                        <img src="logo_ainaa-removebg-preview.png" alt="Logo" class="intro-logo">
+                    </div>
+                    <p style="text-align: justify;">Hello! My name is Nur Ainaa 
+                        Syazwani and I'm an Information Library Management student at University Technology MARA (UiTM).
+                    </p>
+                    <p style="text-align: justify;">I'm passionate about assisting 
+                        people in accessing and organising information effectively, which is why I opted to pursue my study 
+                        in library management. I believe libraries serve an important role in promoting information exchange 
+                        and lifelong learning in our communities. I'm excited to keep learning and expanding my abilities 
+                        in this industry so that I may positively impact society through information resource management. 
+                        I'm excited to obtain hands-on experience throughout my studies and contribute to the improvement 
+                        of library services in the future.
+                    </p>
+                    <p style="text-align: justify;">I'm not entirely sure where I envision myself in five years or what
+                        my main professional aspiration is. I don't have enough professional experience to be certain about 
+                        such things, and the world is changing quickly. But I'm confident that I can bring new ideas and 
+                        exceptional methodology to each assignment. I welcome challenges and helpful criticism at all times. 
+                        I have an open mind and pick things up fast. I think that my capacity to adapt and my eagerness to 
+                        learn will come in handy as I navigate the ever changing field of information management. I have faith 
+                        that I can contribute positively to the field if I work hard and am dedicated to it. 
+                    </p>
+                    <p> Stay connected with me on my social media!</p>
+                    <div class="social-links" style="padding-right: 30%">
+                        <a href="https://www.instagram.com/ohainaa?igsh=MTA4YjZvcGF1a3dhZg==" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="https://x.com/ainaabae?t=8ogEg18Mid2u8vSSlzxZAA&s=09" target="_blank"><img src="x.png" alt="X"></a>
+                        <a href="https://www.linkedin.com/in/ainaa-syaifuddin-030227127nas" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.tiktok.com/@ainaastyles?_t=8mt0ccEht7o&_r=1" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="picture" src="my picture/photo_2024-05-20_23-56-24.jpg" alt="Ainaa Syazwani">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Copyright © 2024, Nur Ainaa Syazwani</p>
+    </div>
+</body>
+</html>
