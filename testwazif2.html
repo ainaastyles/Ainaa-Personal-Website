@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar - Cyberjaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        li, a {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            padding: 0px 10px;
+            transition: all 0.50s ease;
+        }
+        
+        .nav_links {
+            list-style: none;
+            display: flex; /* Display flex to align items horizontally */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        .nav_links li {
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all 0.50s ease;
+        }
+
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+            color: #4FB6EC;
+        }
+
+        .nav_links li a.active {
+            color: #4FB6EC;
+        }
+
+        .nav_links li {
+            position: relative;
+        }
+
+        .nav_links ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style: none;
+            z-index: 100;
+        }
+
+        .nav_links li:hover ul {
+            display: block;
+        }
+
+        .nav_links ul li {
+            padding: 10px;
+        }
+
+        .nav_links ul li a {
+            color: #140101;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 28px;
+            color: #140101;
+        }
+
+        .content-section p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content-section img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+        }
+
+        .event {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .event:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #4FB6EC;
+            margin-bottom: 10px;
+        }
+
+        .event-time {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .event-description {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #777;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #4FB6EC;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Attractions</a></li>
+                <li><a href="#">Facilities</a></li> 
+                <li><a href="#">Activities</a></li>
+                <li><a class="active" href="event.html">Event Calendar</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">More</a>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1 style="text-align: center; font-family: 'Playwrite Slovensko';">Event Calendar</h1>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <div class="event">
+                <div class="event-title">Yoga in the Park</div>
+                <div class="event-time">Sunday, July 7:00 AM - 8:00 AM</div>
+                <div class="event-description">Start your Sunday with a refreshing yoga session at Cyberjaya Park.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Weekly Night Market</div>
+                <div class="event-time">Tuesday, July 6:00 PM - 10:00 PM</div>
+                <div class="event-description">A bustling night market with vendors selling a variety of goods, street food, and handmade crafts.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Cyberjaya Innovation Festival</div>
+                <div class="event-time">Wednesday to Friday, July 5-7: All Day</div>
+                <div class="event-description">A platform showcasing innovative technology and startups, including workshops, panels, and exhibitions.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Cyberjaya Food Festival</div>
+                <div class="event-time">Tuesday to Thursday, July 12-14: All Day</div>
+                <div class="event-description">A gastronomic event with food trucks, stalls, and live cooking demonstrations from local and international chefs.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Cyberjaya Marathon</div>
+                <div class="event-time">Saturday, July 21: All Day</div>
+                <div class="event-description">A marathon event featuring different categories for various skill levels, promoting health and fitness in the community.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Cyberjaya Arts and Music Festival</div>
+                <div class="event-time">Friday to Sunday, July 27-29: All Day</div>
+                <div class="event-description">An event celebrating local arts and music with performances, art installations, and workshops.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Soft Love Pop-Up Marketplace</div>
+                <div class="event-time">Wednesday, July 12: All Day</div>
+                <div class="event-description">This event will feature a variety of workshops and a flea market atmosphere, providing a platform for local artisans and vendors to showcase their products.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">Winning HR Strategies Conference</div>
+                <div class="event-time">Monday to Tuesday, July 16-17: All Day</div>
+                <div class="event-description">This event will be held at the Cyberview Resort and Spa, focusing on effective HR practices and strategies. It is HRDF claimable, making it a valuable opportunity for HR professionals.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Event Calendar - Cyberjaya. All rights reserved. | Designed by Your Company</p>
+    </div>
+
+</body>
+</html>
